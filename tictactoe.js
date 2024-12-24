@@ -4,7 +4,6 @@
 ** and we expose a dropToken method to be able to add Cells to squares
 */
 
-
 function Gameboard() {
   const rows = 3;
   const columns = 3;
