@@ -1,0 +1,54 @@
+(Based on 2. and 3. tip)
+
+1. I think I would need to use a function (using loop -probably inside a factory function-) to generate 9 cells (three rows and three columns). I should create rows and columns variables of which value is 3. I should also create a (board) variable of which value should be an empty array.
+
+1.1. The array should appear like 3*3 grid so after every third value it should move the upcoming value to bottom left line.
+
+2. I'd need to create a code (probably a factory function) that defines players and change rounds.
+
+2.1. In order to change the round, my code should check whether the other player already made its move.
+
+
+3. I'd need to create a code to move player's token (O or X) to a desired position.
+
+3.1. Before moving a player's token to a desired position, my code should check whether the position is empty or not.
+
+3.2. A player could do only one move per turn.
+
+
+4. I'd need to create a code that check for a winner/tie.
+
+4.1. The code should check whether there are three O or X side by side vertically, horizontally or diagonally.
+
+4.1. I think there should be conditional statement to check whether the result is a win or a tie. I need to store the result so that I can use it on the fifth step.
+
+5. I'd need to create a code that ends the game by announcing a winner or a tie.
+
+5.1. I should use to stored result to announce the game end.
+
+-----
+Misc
+
+Code for winning/tie
+
+My code needs to dedect the value of the cell so that it can decide whether there are three 0 or X listed side by side vertically, horizontally or diagonally.
+
+So the steps for creating the winning/tie conditions should be like below.
+
+1. I need to dedect the value of the cell.
+
+2. I need to create codes that uses conditional statements to declare a winning/tie condition.
+
+2.1.If the winning condition is provided, winner should be announced.
+
+2.2 If the winning condition is not provided, the game should be declared as tie.
+
+
+-------
+
+
+
+
+
+
+

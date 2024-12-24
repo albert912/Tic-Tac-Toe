@@ -1,0 +1,136 @@
+1. The building a house from the inside article was very helpful for me. Even more so helpful at the battleship and todo project, which a lot of find difficult.
+
+2.forget about coding. how would you describe playing tic-tac-toe? write it down in steps. then break down each step to smaller ones if you feel necessary. for example: "X needs to happen, then Y needs to happen.." ok what does X need to happen? .. you can think in this manner. focus on making an array and then changing "the state" of one of its items in the console first. you will pick it up from there.
+
+3.Play a few games against yourself and then make the 3 x 3 grid on a paper and try thinking of how you can make this structure and would be a win in that structure.
+
+4. Oh man, I feel you 100%. I was stuck at this for over a week. I suck at doing pseudocode (meaning I usually either forget to do it or when I do it it is not as detailed as it should be), but eventually I solved it with truly understanding what I wanted to do splitting esch problem into smaller and smaller problems. To start off IIFE module pattern and factory functions should be your go to. Some guidelines I can give you:
+
+You need to have something to store you game board.
+
+You need something to create players.
+
+You need to be able to move a player on a desired position.
+
+You need to check for a winner/tie
+
+You need to end game with either winner or tie.
+
+Each of these problems will have their own subproblems like checking if position is empty or not, switching players each turn and so on.
+
+
+5.Honestly, this project absolutly fixed and made me understand how exactly all this “factory functions”,”closure”,”encapsulation” thing works. Veeery very important how to separate functionality using functions. Hard to do. Important for the future lessons.
+
+I made this project by mistake using 2d array (matrices)😂😂 then in found out that i can use just simple arrays. All this abstraction is pretty hard and i believe here is where the difference stands.
+
+---------------------------------------------------------
+
+My question : I want to ask something, people. 
+
+I am at the Tic Tac Toe Project (which I found a hard one ) and checking the "Building A House From The Inside Out" page to get idea on how to start doing project. 
+
+1.So, do you think that imitating the code provided in the page to create the code for the project could be considered as cheat?
+
+If I never looked at that code, I do not think that I'd have any idea on what kind of a code to write (of course I do not think that just imitating that code would be enough the complete the project but that is another story).
+
+(a bit dumb) Do you think that I should review Factory Function (previous course) course the get an idea why would I need factory functions (or module patterns) in this project?
+
+Answers
+
+1. No.
+
+Yes.
+If it feels unsatisfying to use code you cribbed from a prior lesson, fear not! You will have ample opportunities to demonstrate your understanding in future projects, and afaik the code from the housebuilding exercise can't be directly ripped so you're still doing plenty of work on your own.
+
+2. I might consider having a conversation here, getting an understanding of how to create objects, how different mechanisms yield slightly different results, which might be more useful or meaningful in a given situation.
+
+3.im doing that project rn and definitely feel like if it was shown for you to read then there should be no problems reading / basing some of your code off of it
+there's still a lot of aspects you need to do that are not in the article / won't directly apply so you are still learning a lot
+
+
+-------------------------------
+
+const numbers = [1, 2, 3, 4, 5];
+
+const areAllPositive = numbers.every(function(number) {
+  return number > 0;
+});
+
+console.log(areAllPositive);
+
+-------
+
+Coordinats for winning
+
+[0,0] [0,1] [0,2] ; [1,0] [1,1] [1,2] ; [2,0] [2,1] [2,2]; [0,0] [1,0] [2,0] ; [0,1] [1,1] [2,1]; [0,2] [1,2] [2,2]; [0,0] [1,1] [2,2]; [2,0] [1,1] [0,2] 
+
+Syntax
+
+if (array0[0,0] ===)) {
+console.log("You won the GAME");
+}
+
+else {
+    console.log("The game is a TIE");
+
+-----
+
+Console Code
+
+let a= 1;
+
+let b= 0;
+
+let c= 2;
+
+let d= 1;
+
+let f = 0;
+
+let g= 0;
+
+let h= 1;
+
+let k = 0;
+
+let l= 0;
+
+let array0 = [];
+
+let array1 = [a,b,c];
+
+let array2 = [d,f,g];
+
+let array3 = [h,k,l];
+
+array0.push(array1);
+
+array0.push(array2);
+
+array0.push(array3);
+
+
+if (array0[0][0] === 1 && array0[1][0] === 1 && array0[2][0] === 1 && array0[0][0] === 2 && array0[1][0] === 2 && array0[2][0] === 2)  {
+ console.log("YOU WON THE GAME!");
+}
+
+else {
+console.log("THE GAME IS A TIE");
+}
+
+------
+
+Now that is completely different issue than your original issue. I would probably try to find out why are there dots and what those dots mean. You are mixing console logs from completely different scopes that have nothing to do together. 
+
+You seem very confused about which part of your code is doing what. Console log from line 52 was always there and it didnt change at all and you removing console logs also didnt affect that at all, it has been there whole time.
+
+I suggest you gather your thoughts experiment with your code and then when you have specific question to ask, go ahead and ask.
+Currently you are asking such a broad question about implementation that I don't even know how to answer. sorry.
+
+1. I need to find a way to write this code on my JS and display the result on the console, me without entering condition on the console.
+
+1.a. I need to announce which player won the game.
+
+1.b. I need to delete codes that announce (for the console version) player's turn but it can print the new round.
+
+
