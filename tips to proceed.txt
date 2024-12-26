@@ -134,3 +134,63 @@ Currently you are asking such a broad question about implementation that I don't
 1.b. I need to delete codes that announce (for the console version) player's turn but it can print the new round.
 
 
+-----------------
+After winning and tie conditions
+
+When all cells are filled and either a winning or a tie declaration happen these happen:
+
+a. current player is changed.
+
+b.  this change is announced.
+
+What should happen normally 
+
+a. cells should be reset.
+
+b. current player should be the first player.
+
+---------------
+
+Which codes should be deleted when creating UI (these are dubious)
+
+a. dropToken
+
+b. printBoard
+
+c. dropToken should be deleted inside GameController (getActivePlayer should be kept).
+
+What needs to be happens on UI version.
+
+a.When a player clicks on a cell, X should be displayed on the cell (if the clicker is player one) and O should be displayed on the cell (if the clicker is player two).
+
+b. If any player wins the game, it should be alerted. If the game is a tie it should be alerted also.
+
+c. after the win or tie declaration, cells should reset to 0 and game should be restarted. 
+
+
+----
+Further Misc things on UI build.
+
+you shouldn't delete the original gameboard array at any stage
+your HTML frontend should be doing what you were doing through the CLI, but only through interacting with DOM elements this time
+
+think of your HTML as a signal sender that sends signals to your CLI tic tac toe game to do certain actions, and then displays the result of those actions back on the page.
+
+------
+
+Fourth step means that I should see the gameboard (3*3 grid) on the page.
+
+Things that I need to do in this step.
+
+1. Remove dropToken and other codes as my game is Tic Tac Toe.
+
+2. Add ScreenController and updateScreen functions to the code.
+
+3. Change CSS property values.
+
+
+
+
+
+
+
