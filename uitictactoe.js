@@ -15,15 +15,7 @@ function Gameboard() {
 
   const getBoard = () => board;
 
-  /* const dropToken = (column, player) => {
-    const availableCells = board.filter((row) => row[column].getValue() === 0).map(row => row[column]);
-
-    if (!availableCells.length) return;
-
-    const lowestRow = availableCells.length - 1;
-    board[lowestRow][column].addToken(player);
-  }; */
-
+  
   const printBoard = () => {
     const boardWithCellValues = board.map((row) => row.map((cell) => cell.getValue()));
     console.log(boardWithCellValues);
@@ -249,7 +241,7 @@ function ScreenController() {
 
      const secondname = `${namtwo} WON THE GAME!`;
 
-       if (activePlayer.name === "Player One" && cellButton.textContent === "" && namone !== "" ) {
+       if (activePlayer.name === "Player One" && cellButton.textContent === "" && namone !== "" && anos.textContent === ""  ) {
         cellButton.textContent = "X";
         activePlayer.name = "Player Two";
 
@@ -257,7 +249,7 @@ function ScreenController() {
       
        }
 
-       else if (activePlayer.name === "Player Two" && cellButton.textContent === "" && namtwo !== "") {
+       else if (activePlayer.name === "Player Two" && cellButton.textContent === "" && namtwo !== ""  && anos.textContent === "") {
         cellButton.textContent = "O";
         activePlayer.name = "Player One";
 
@@ -266,7 +258,7 @@ function ScreenController() {
       
        }
 
-       else if (activePlayer.name === "Player One" && cellButton.textContent === "" && namone === "" ) {
+       else if (activePlayer.name === "Player One" && cellButton.textContent === "" && namone === ""  && anos.textContent === "" ) {
         cellButton.textContent = "X";
        
         activePlayer.name = "Player Two";
@@ -277,7 +269,7 @@ function ScreenController() {
       
        }
 
-       else if (activePlayer.name === "Player Two" && cellButton.textContent === "" && namtwo === "") {
+       else if (activePlayer.name === "Player Two" && cellButton.textContent === "" && namtwo === ""  && anos.textContent === "") {
         cellButton.textContent = "O";
         activePlayer.name = "Player One";
 
@@ -524,11 +516,6 @@ function ScreenController() {
 
         });
 
-       
-
-    
-
-        
 
       
     });
@@ -539,26 +526,6 @@ function ScreenController() {
   };
 
 
-  
-
-
-  //New Code
-
-  
-
-  // Add event listener for the board
-   /*function clickHandlerBoard(e) {
-    const selectedColumn = e.target.dataset.column;
-    // Make sure I've clicked a column and not the gaps in between
-    if (!selectedColumn) return;
-
-    game.playRound(selectedColumn);
-    updateScreen();
-  }
-
-  boardDiv.addEventListener("click", clickHandlerBoard); */
-
-  // Initial render
   updateScreen();
 }
 
