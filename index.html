@@ -3,14 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Connect Four HTML Skeleton</title>
+    <title>Tic Tac Toe</title>
    <link rel="stylesheet" href="tictactoe.css">
   </head>
   <body>
-   <d class="container">
+
+ 
+   <div class="container">
+    <div class="announce"></div>
      <h1 class="turn"></h1>
      <div class="board"></div>
    </div>
+
+   <button class="btn">Enter Player Names</button>
+
+   <dialog class="dia">
+    <form>
+   <label for="textone">Player 1 Name: </label>
+   <input type="text" id="textone" name="text">
+
+   <br>
+   <br>
+
+   <label for="texttwo">Player 2 Name: </label>
+   <input type="text" id="texttwo" name="text">
+
+   <br>
+   <br>
+
+   <button type="button"   class="submit">Submit</button>
+
+   
+  </form>
+  </dialog>
+
+<div class="player">
+<p class="anon1">Player 1: </p>
+<p class="anon2">Player 2: </p>
+
+</div>
+
+<button type="button" class="rstrt">Restart</button>
+
     <script src="uitictactoe.js"></script>
   </body>
 </html>

@@ -184,12 +184,31 @@ Things that I need to do in this step.
 
 1. Remove dropToken and other codes as my game is Tic Tac Toe.
 
-2. Add ScreenController and updateScreen functions to the code.
+2. Add ScreenController and updateScreen functions to the code and make necessary changes on them.
 
 3. Change CSS property values.
 
+--- it seems that, I did this.
+
+------
+
+Fifth step
+
+** I realized that, I may not need index related code in the ScreenController as I will use X and O not numbers.
+
+When player 1 click on the cell, X should be shown, player 2 clicks on the cells, O should be shown.
+
+Winning condition should check whether player 1's or player 2's tokens are placed side by side.
 
 
+
+
+This is probably a stupid and unnecessary question but still. 
+
+Currently **Player One's turn** text (it would change to **Player Two's turn** when one clicks on a cell) is shown above the gameboard (you can check it from the ss I shared) but now I want to show players' names (which they entered via input) on that place. As the code won't know players' names until they entered them via input, **Player One's turn** will be shown above the gameboard. Do you think I should remove this text as let this space be empty until players enter their names? If I do that that place will be blank at the start, if I do not the text will be changed twice (which may look bad). What do you think?
+
+
+Well, if the users do not enter their name in inputs, and a click is made to the input (which means that it is Player Two's turn now) Player Two's turn won't be displayed above the gameboard (because I made changes in my code to use player 2 input), do you think it should be a problem?
 
 
 

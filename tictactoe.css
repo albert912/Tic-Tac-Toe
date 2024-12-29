@@ -1,3 +1,13 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+}
+
+
+
 .board {
     display: grid;
     height: 500px;
@@ -7,7 +17,7 @@
     border: 1px solid black;
     gap: 2px;
     padding: 2px;
-    background-color: yellow;
+    background-color: pink;
   }
   
   .cell {
@@ -22,7 +32,43 @@
   }
   
   
+  .btn {
+  position: relative;
+  right: -20px;
+  top: -150px;
+
+  }
+
+  .player {
+    position: relative;
+    right: 130px;
+    top: -60px;
+    background-color: lightblue;
+    height: 100px;
+    width: 200px;
+  }
+
+  .rstrt { 
+    position: relative;
+    right: 280px;
+    top: 25px;
+  }
   
-  
+  .announce{
+    display: flex;
+   position: relative; 
+  top: -10px;
+  left: 350px;
+  height: 100px;
+  width: 400px;
+  background-color: blanchedalmond;
+  justify-content: center;
+  align-items: center;
+  /*height: 100%;*/
+  text-align: center;
+  color: red;
+
+
+  }
   
   
