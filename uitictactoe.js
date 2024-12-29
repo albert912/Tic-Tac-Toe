@@ -496,8 +496,6 @@ function ScreenController() {
 
       )
 
-
-      
        { 
         
         anos.textContent =  `${ptwo.value} WON THE GAME!`;
